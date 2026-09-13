@@ -1,10 +1,9 @@
 ---
 layout: home
-title: Jerry Sun's Main Page
-subtitle: 欢迎来到我的博客 · Welcome to my blog
+title: 你好，我是孙家瑞 👋
+subtitle: 欢迎来到我的主页 · Learning & Life
 ---
 
-你好，我是 **孙家瑞（Jerry Sun）**，这里会记录我的学习和生活。
+我会在这里记录学习和生活中的一些想法。
 
-- 邮箱：[sunjiarui@stu.pku.edu.cn](mailto:sunjiarui@stu.pku.edu.cn)
-- GitHub：[@mikucy7](https://github.com/mikucy7)
+也欢迎通过[邮箱](mailto:sunjiarui@stu.pku.edu.cn)或 [GitHub](https://github.com/mikucy7) 联系我。

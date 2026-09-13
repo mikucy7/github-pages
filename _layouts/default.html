@@ -1,25 +1,39 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%232563eb'/></svg>">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
 
-<div class="intro-header"></div>
-
-<main class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  {% if page.before-content %}
-    <div class="before-content">
-      {% for file in page.before-content %}
-        {% include {{ file }} %}
-      {% endfor %}
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/aboutme/' | relative_url }}">关于</a>
+      </nav>
     </div>
-  {% endif %}
+  </header>
 
-  {{ content }}
+  <main class="wrap">
+    {{ content }}
+  </main>
 
-  {% if page.after-content %}
-    <div class="after-content">
-      {% for file in page.after-content %}
-        {% include {{ file }} %}
-      {% endfor %}
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        © 2025–2026 {{ site.author }}
+        · <a href="mailto:{{ site.email }}">邮箱</a>
+        · <a href="https://github.com/mikucy7" target="_blank" rel="noopener">GitHub</a>
+        · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </p>
     </div>
-  {% endif %}
-</main>
+  </footer>
+
+</body>
+</html>

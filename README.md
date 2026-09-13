@@ -1,8 +1,9 @@
 # Jerry Sun's Main Page
 
-个人主页与博客，基于 [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll) 模版，托管在 GitHub Pages。
+个人主页与博客，使用自定义的极简「蓝白」模板（纯 HTML + 单个 CSS 文件，无外部依赖），托管在 GitHub Pages。
 
 - 在线访问：<https://mikucy7.github.io/github-pages/>
+- 本地预览：见 `../preview/`（与仓库同级的预览目录）
 
 ## 写新文章
 
@@ -19,6 +20,8 @@ date: 2026-09-13
 
 提交并推送到 `main` 分支后，GitHub Pages 会自动重新构建，一两分钟后刷新页面即可看到新文章。
 
-## 修改站点外观
+## 修改外观
 
-站点标题、导航栏、配色、社交链接等都在 `_config.yml` 里改；导航栏头像在 `assets/img/` 里，替换后更新 `_config.yml` 中的 `avatar` 路径。
+- 配色/字体/间距都在 `assets/css/style.css` 顶部的 `:root` 变量里改；
+- 页面结构在 `_layouts/`（`default.html` 是整体框架，`home.html`/`post.html`/`page.html` 分别是首页、文章页、普通页）；
+- 站点标题、作者、邮箱在 `_config.yml`。

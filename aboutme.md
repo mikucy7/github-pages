@@ -2,6 +2,7 @@
 layout: page
 title: 关于我
 subtitle: About Me
+permalink: /aboutme/
 ---
 
 我是**孙家瑞（Jerry Sun）**，这是我的个人主页与博客。
