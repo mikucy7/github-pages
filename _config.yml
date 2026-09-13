@@ -1,3 +1,101 @@
-theme: minima
+###########################################################
+# Jerry Sun's personal site
+# Theme: Beautiful Jekyll (https://github.com/daattali/beautiful-jekyll, MIT)
+# 模版文件已直接放进本仓库，改这里的配置即可调整站点外观
+###########################################################
+
+# --- 基本设置（必填）--- #
 title: Jerry Sun's Main Page
-description: sth
+author: Jerry Sun
+description: "孙家瑞的个人主页与博客 | Jerry Sun's personal homepage and blog"
+url: "https://mikucy7.github.io"
+baseurl: "/github-pages"
+language: "zh-CN"
+
+# --- 导航栏 --- #
+navbar-links:
+  首页: "/"
+  关于: "aboutme.html"
+
+# 导航栏头像（换自己的图：把图片放进 assets/img/ 然后改下面的路径）
+avatar: "/assets/img/avatar-icon.png"
+round-avatar: true
+
+# --- 页脚社交链接 --- #
+social-network-links:
+  email: "sunjiarui@stu.pku.edu.cn"
+  github: mikucy7
+  rss: true
+
+rss-description: "Jerry Sun's blog"
+url-pretty: "mikucy7.github.io"
+
+# --- 文章页分享/评论（暂时全部关闭）--- #
+share-links-active:
+  twitter: false
+  facebook: false
+  linkedin: false
+  vk: false
+  reddit: false
+
+# --- 功能开关 --- #
+title-on-all-pages: true
+excerpt_length: 60
+feed_show_excerpt: true
+feed_show_tags: true
+post_search: true        # 导航栏搜索框，构建时自动索引 _posts
+edit_page_button: false
+
+# --- 配色（青色点缀，可自行修改）--- #
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#0d9488"
+hover-col: "#0f766e"
+navbar-col: "#F8F9FA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+footer-col: "#F8F9FA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0f766e"
+
+# --- 其他 --- #
+date_format: "%Y-%m-%d"
+timezone: "Asia/Shanghai"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false
+      social-share: false
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - beautiful-jekyll-LICENSE
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap

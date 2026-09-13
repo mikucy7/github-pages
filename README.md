@@ -1,57 +1,24 @@
-<header>
+# Jerry Sun's Main Page
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+个人主页与博客，基于 [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll) 模版，托管在 GitHub Pages。
 
-# GitHub Pages
+- 在线访问：<https://mikucy7.github.io/github-pages/>
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+## 写新文章
 
-</header>
+在 `_posts/` 目录下新建 `YYYY-MM-DD-标题.md` 文件（日期必须保留在文件名最前面）：
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
-
-## Finish
-
-_Congratulations friend, you've completed this course!_
-
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
-
-Your blog is now live and has been deployed!
-
-Here's a recap of all the tasks you've accomplished in your repository:
-
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
-
-### What's next?
-
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
+```markdown
+---
+title: "文章标题"
+date: 2026-09-13
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+正文内容，支持 Markdown。
+```
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+提交并推送到 `main` 分支后，GitHub Pages 会自动重新构建，一两分钟后刷新页面即可看到新文章。
 
-</footer>
+## 修改站点外观
+
+站点标题、导航栏、配色、社交链接等都在 `_config.yml` 里改；导航栏头像在 `assets/img/` 里，替换后更新 `_config.yml` 中的 `avatar` 路径。
