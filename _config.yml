@@ -15,7 +15,7 @@ language: "zh-CN"
 # --- 导航栏 --- #
 navbar-links:
   首页: "/"
-  关于: "aboutme.html"
+  关于: "aboutme/"
 
 # 导航栏头像（换自己的图：把图片放进 assets/img/ 然后改下面的路径）
 avatar: "/assets/img/avatar-icon.png"
@@ -39,7 +39,7 @@ share-links-active:
   reddit: false
 
 # --- 功能开关 --- #
-title-on-all-pages: true
+title-on-all-pages: false
 excerpt_length: 60
 feed_show_excerpt: true
 feed_show_tags: true
